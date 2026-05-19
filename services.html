@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Content Squad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo"><span class="pl-c">C</span><span class="pl-s">S</span></div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <div class="preloader-text">LOADING SERVICES</div>
+  </div>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">CONTENT<span>SQUAD</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="services.html" class="nav-link active">Services</a></li>
+    <li><a href="courses.html" class="nav-link">Courses</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Start Project</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <div class="fsm-bg"></div>
+  <div class="fsm-content">
+    <div class="fsm-links">
+      <a href="index.html" class="fsm-link" data-num="01">Home</a>
+      <a href="services.html" class="fsm-link" data-num="02">Services</a>
+      <a href="courses.html" class="fsm-link" data-num="03">Courses</a>
+      <a href="about.html" class="fsm-link" data-num="04">About</a>
+      <a href="contact.html" class="fsm-link" data-num="05">Contact</a>
+    </div>
+    <div class="fsm-footer">
+      <p>contentsquadx@gmail.com</p>
+      <p>Faisalabad, Pakistan</p>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+  </div>
+  <div class="container">
+    <div class="ph-content">
+      <span class="section-tag reveal-up">Our Services</span>
+      <h1 class="page-title reveal-up">Professional Creative<br><span class="accent">Services</span></h1>
+      <p class="page-sub reveal-up">Everything you need to grow your channel and brand — under one roof.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE TABS -->
+<section class="section-services">
+  <div class="container">
+    <div class="service-tabs">
+      <button class="stab active" data-tab="video">Video Editing</button>
+      <button class="stab" data-tab="thumbnail">Thumbnail Design</button>
+      <button class="stab" data-tab="branding">Branding & Design</button>
+      <button class="stab" data-tab="consultation">Consultation</button>
+    </div>
+
+    <!-- VIDEO EDITING -->
+    <div class="tab-content active" id="tab-video">
+      <div class="tab-intro reveal-up">
+        <h2 class="section-title">Video Editing <span class="accent">Services</span></h2>
+        <p>Cinematic quality editing for all platforms — from long-form YouTube to viral short-form content.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0" data-service="longform">
+          <div class="sc-header">
+            <div class="sc-icon">🎬</div>
+            <div class="sc-badge">$5–$10 / min</div>
+          </div>
+          <h3>Long Form Video Editing</h3>
+          <p>For YouTube videos, podcasts, finance, crypto, educational, documentary, interviews, and real estate content.</p>
+          <div class="sc-features">
+            <span>Cinematic Editing</span>
+            <span>Motion Graphics</span>
+            <span>Color Grading</span>
+            <span>Sound Design</span>
+            <span>Retention Editing</span>
+            <span>Professional Subtitles</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('longform')">View Sample Work</button>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="150" data-service="shortform">
+          <div class="sc-header">
+            <div class="sc-icon">📱</div>
+            <div class="sc-badge">$10–$20 / min</div>
+          </div>
+          <h3>Short Form Video Editing</h3>
+          <p>For YouTube Shorts, TikTok, Instagram Reels, viral clips, and podcast highlights.</p>
+          <div class="sc-features">
+            <span>Viral Editing Style</span>
+            <span>Fast-Paced Cuts</span>
+            <span>Captions & Animations</span>
+            <span>Hook Optimization</span>
+            <span>Trend-Based Effects</span>
+            <span>Retention Pacing</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('shortform')">View Sample Work</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- THUMBNAIL -->
+    <div class="tab-content" id="tab-thumbnail">
+      <div class="tab-intro reveal-up">
+        <h2 class="section-title">Thumbnail Design <span class="accent">Services</span></h2>
+        <p>High CTR thumbnails designed with psychology, strategy, and cinematic quality.</p>
+      </div>
+      <div class="services-grid three-col">
+        <div class="service-card reveal-up" data-delay="0" data-service="basic-thumb">
+          <div class="sc-header">
+            <div class="sc-icon">🖼️</div>
+            <div class="sc-badge">Basic</div>
+          </div>
+          <h3>Basic Thumbnail Design</h3>
+          <p>For simple content creators, beginner channels, and talking-head videos.</p>
+          <div class="sc-features">
+            <span>Clean Design</span>
+            <span>Basic Text Styling</span>
+            <span>Simple Background Enhancement</span>
+            <span>Basic CTR Optimization</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('basic-thumb')">View Samples</button>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="150" data-service="edu-thumb">
+          <div class="sc-header">
+            <div class="sc-icon">🎓</div>
+            <div class="sc-badge">Medium</div>
+          </div>
+          <h3>Educational / Medium Level</h3>
+          <p>For educational creators, finance channels, podcast creators, and business content.</p>
+          <div class="sc-features">
+            <span>Better Composition</span>
+            <span>Thumbnail Psychology</span>
+            <span>Advanced Text Hierarchy</span>
+            <span>CTR-Focused Layouts</span>
+            <span>Professional Lighting</span>
+            <span>Premium Creator Style</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('edu-thumb')">View Samples</button>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="300" data-service="highend-thumb">
+          <div class="sc-header">
+            <div class="sc-icon">🏆</div>
+            <div class="sc-badge">Premium</div>
+          </div>
+          <h3>High-End Creator Thumbnails</h3>
+          <p>For large creators, premium YouTube channels, and viral content creators.</p>
+          <div class="sc-features">
+            <span>Cinematic Manipulation</span>
+            <span>AI-Enhanced Workflows</span>
+            <span>Advanced Compositing</span>
+            <span>High CTR Strategy</span>
+            <span>Premium Visual Storytelling</span>
+            <span>Custom Creator Branding</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('highend-thumb')">View Samples</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRANDING -->
+    <div class="tab-content" id="tab-branding">
+      <div class="tab-intro reveal-up">
+        <h2 class="section-title">Graphic Design & <span class="accent">Branding</span></h2>
+        <p>Complete brand identity and creative design solutions for creators and businesses.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0" data-service="branding-design">
+          <div class="sc-header">
+            <div class="sc-icon">✦</div>
+            <div class="sc-badge">Full Package</div>
+          </div>
+          <h3>Branding & Identity</h3>
+          <p>Logo design, brand identity, social media branding, posters, banners, and marketing designs.</p>
+          <div class="sc-features">
+            <span>Logo Design</span>
+            <span>Brand Identity</span>
+            <span>Social Media Branding</span>
+            <span>Poster Design</span>
+            <span>Banner Design</span>
+            <span>Marketing Designs</span>
+            <span>Business Creative Assets</span>
+            <span>UI-Focused Graphics</span>
+          </div>
+          <button class="sc-btn" onclick="openServiceModal('branding-design')">View Samples</button>
+        </div>
+
+        <div class="service-card long-term reveal-up" data-delay="150">
+          <div class="sc-header">
+            <div class="sc-icon">🤝</div>
+            <div class="sc-badge accent-badge">Long-Term</div>
+          </div>
+          <h3>Long-Term Partnership</h3>
+          <p>For creators and brands who want to work with Content Squad on an ongoing basis. Get dedicated team support, priority delivery, and exclusive partnership rates.</p>
+          <div class="lt-perks">
+            <div class="lt-perk">Priority Support</div>
+            <div class="lt-perk">Dedicated Editor</div>
+            <div class="lt-perk">Monthly Strategy</div>
+            <div class="lt-perk">Exclusive Rates</div>
+          </div>
+          <a href="contact.html" class="sc-btn">Discuss Partnership</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSULTATION -->
+    <div class="tab-content" id="tab-consultation">
+      <div class="tab-intro reveal-up">
+        <h2 class="section-title">One-on-One <span class="accent">Consultation</span></h2>
+        <p>Book a personal session with Qasim Zia — founder of Content Squad.</p>
+      </div>
+      <div class="consultation-block reveal-up">
+        <div class="consult-left">
+          <div class="consult-avatar">QZ</div>
+          <h3>Qasim Zia</h3>
+          <p>Founder & Content Manager</p>
+          <div class="consult-price">3000 PKR – $10</div>
+        </div>
+        <div class="consult-right">
+          <h4>Session Includes:</h4>
+          <ul class="consult-list">
+            <li>✦ Content audit & analysis</li>
+            <li>✦ Career guidance & direction</li>
+            <li>✦ Personalized growth roadmap</li>
+            <li>✦ Skill-building strategy</li>
+            <li>✦ Editing guidance & review</li>
+            <li>✦ Creator growth strategy</li>
+            <li>✦ Freelancing direction</li>
+            <li>✦ Why you're not growing — answered</li>
+          </ul>
+          <div class="consult-topics">
+            <h4>Topics Covered:</h4>
+            <div class="ct-tags">
+              <span>YouTube Growth</span>
+              <span>Video Editing Career</span>
+              <span>Content Strategy</span>
+              <span>Social Media</span>
+              <span>Freelancing</span>
+              <span>Personal Roadmap</span>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-primary">Book Consultation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YELLOW CTA -->
+<section class="yellow-section">
+  <div class="container">
+    <div class="ys-inner centered">
+      <span class="ys-tag">Start Today</span>
+      <h2 class="ys-title">Ready To Work With<br>A Professional Team?</h2>
+      <p class="ys-sub">Get high-quality creative work that actually grows your channel and business.</p>
+      <div class="ys-ctas" style="justify-content:center">
+        <a href="contact.html" class="btn-dark">Start Your Project</a>
+        <a href="courses.html" class="btn-dark-ghost">Explore Courses</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE POPUP MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="service-modal" id="serviceModal">
+    <button class="modal-close" onclick="closeServiceModal()">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">CONTENT<span>SQUAD</span></div>
+        <p>Your complete creator growth ecosystem.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/923027366693" class="social-btn" target="_blank">WA</a>
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">YT</a>
+          <a href="#" class="social-btn">DC</a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contact</h4>
+        <a href="tel:03027366693">03027366693</a>
+        <a href="mailto:contentsquadx@gmail.com">contentsquadx@gmail.com</a>
+        <a href="#">Faisalabad, Pakistan</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Content Squad. All rights reserved.</p>
+      <p>Built For Creators Who Want Real Growth.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+<script src="services.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Content Squad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo"><span class="pl-c">C</span><span class="pl-s">S</span></div>
+    <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    <div class="preloader-text">LOADING CONTACT</div>
+  </div>
+</div>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">CONTENT<span>SQUAD</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="courses.html" class="nav-link">Courses</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Start Project</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="fullscreen-menu" id="fullscreenMenu">
+  <div class="fsm-bg"></div>
+  <div class="fsm-content">
+    <div class="fsm-links">
+      <a href="index.html" class="fsm-link" data-num="01">Home</a>
+      <a href="services.html" class="fsm-link" data-num="02">Services</a>
+      <a href="courses.html" class="fsm-link" data-num="03">Courses</a>
+      <a href="about.html" class="fsm-link" data-num="04">About</a>
+      <a href="contact.html" class="fsm-link" data-num="05">Contact</a>
+    </div>
+    <div class="fsm-footer">
+      <p>contentsquadx@gmail.com</p>
+      <p>Faisalabad, Pakistan</p>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-bg"><div class="hero-grid"></div><div class="hero-glow"></div></div>
+  <div class="container">
+    <div class="ph-content">
+      <span class="section-tag reveal-up">Get In Touch</span>
+      <h1 class="page-title reveal-up">Let's Work<br><span class="accent">Together</span></h1>
+      <p class="page-sub reveal-up">Start your project today. We respond within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-contact">
+  <div class="container">
+    <div class="contact-inner">
+
+      <!-- CONTACT INFO -->
+      <div class="contact-left reveal-left">
+        <span class="section-tag">Contact Info</span>
+        <h2 class="section-title">Reach Us<br><span class="accent">Directly</span></h2>
+
+        <div class="contact-cards">
+          <a href="tel:03027366693" class="cc-item">
+            <div class="cc-icon">📞</div>
+            <div class="cc-text">
+              <span>Phone / WhatsApp</span>
+              <p>03027366693</p>
+            </div>
+          </a>
+          <a href="mailto:contentsquadx@gmail.com" class="cc-item">
+            <div class="cc-icon">✉️</div>
+            <div class="cc-text">
+              <span>Email</span>
+              <p>contentsquadx@gmail.com</p>
+            </div>
+          </a>
+          <div class="cc-item">
+            <div class="cc-icon">📍</div>
+            <div class="cc-text">
+              <span>Location</span>
+              <p>Faisalabad, Pakistan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-connect">
+          <h4>Connect With Us</h4>
+          <div class="social-big-btns">
+            <a href="https://wa.me/923027366693" class="sbb whatsapp" target="_blank">
+              <span class="sbb-icon">💬</span>
+              <div>
+                <span>WhatsApp</span>
+                <p>Chat directly with us</p>
+              </div>
+            </a>
+            <a href="#" class="sbb instagram">
+              <span class="sbb-icon">📸</span>
+              <div>
+                <span>Instagram</span>
+                <p>Follow our work</p>
+              </div>
+            </a>
+            <a href="#" class="sbb youtube">
+              <span class="sbb-icon">▶️</span>
+              <div>
+                <span>YouTube</span>
+                <p>Watch our content</p>
+              </div>
+            </a>
+            <a href="#" class="sbb discord">
+              <span class="sbb-icon">🎮</span>
+              <div>
+                <span>Discord</span>
+                <p>Join our community</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT FORM -->
+      <div class="contact-right reveal-right">
+        <div class="contact-form-wrap">
+          <h3>Send Us a Message</h3>
+          <p>Tell us about your project and we'll get back to you shortly.</p>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="John Creator" required>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Service You Need</label>
+              <select>
+                <option value="">Select a service...</option>
+                <option>Long Form Video Editing</option>
+                <option>Short Form Video Editing</option>
+                <option>Thumbnail Design</option>
+                <option>Branding & Graphic Design</option>
+                <option>Course Enrollment</option>
+                <option>One-on-One Consultation</option>
+                <option>Long-Term Partnership</option>
+                <option>Community / Discord</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Project Details</label>
+              <textarea placeholder="Tell us about your project, channel, or goals..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">
+              <span>Send Message</span>
+              <div class="btn-arrow">→</div>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="fs-icon">✓</div>
+            <h4>Message Sent!</h4>
+            <p>We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- YELLOW SECTION -->
+<section class="yellow-section">
+  <div class="container">
+    <div class="ys-inner centered">
+      <span class="ys-tag">Consultation</span>
+      <h2 class="ys-title">Book a 1-on-1 Session<br>With Qasim Zia</h2>
+      <p class="ys-sub">Get personalized guidance on your content, career, and growth. 3000 PKR – $10 per session.</p>
+      <div class="ys-ctas" style="justify-content:center">
+        <a href="https://wa.me/923027366693" class="btn-dark" target="_blank">Book via WhatsApp</a>
+        <a href="mailto:contentsquadx@gmail.com" class="btn-dark-ghost">Book via Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title reveal-up">Frequently Asked <span class="accent">Questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal-up">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How do I get started with Content Squad?</span>
+          <div class="faq-arrow">+</div>
+        </div>
+        <div class="faq-a">Simply fill out the contact form or reach us on WhatsApp. Tell us about your project and we'll discuss the details and get started quickly.</div>
+      </div>
+      <div class="faq-item reveal-up">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How long does a video editing project take?</span>
+          <div class="faq-arrow">+</div>
+        </div>
+        <div class="faq-a">Typically 2–5 business days for long-form content and 1–2 days for short-form content, depending on complexity and revision requests.</div>
+      </div>
+      <div class="faq-item reveal-up">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Do you offer revisions?</span>
+          <div class="faq-arrow">+</div>
+        </div>
+        <div class="faq-a">Yes! We include revision rounds in every project to make sure you're completely satisfied with the final output.</div>
+      </div>
+      <div class="faq-item reveal-up">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>How are the free courses delivered?</span>
+          <div class="faq-arrow">+</div>
+        </div>
+        <div class="faq-a">Free courses are delivered through our community and direct channels. Contact us to get enrolled and receive access details.</div>
+      </div>
+      <div class="faq-item reveal-up">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>Can I join the Discord community without buying a service?</span>
+          <div class="faq-arrow">+</div>
+        </div>
+        <div class="faq-a">Yes! The Content Squad Discord community is open to creators at all levels. Contact us to get your invite link and join hundreds of creators improving together.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">CONTENT<span>SQUAD</span></div>
+        <p>Your complete creator growth ecosystem.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/923027366693" class="social-btn" target="_blank">WA</a>
+          <a href="#" class="social-btn">IG</a>
+          <a href="#" class="social-btn">YT</a>
+          <a href="#" class="social-btn">DC</a>
+        </div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Contact</h4>
+        <a href="tel:03027366693">03027366693</a>
+        <a href="mailto:contentsquadx@gmail.com">contentsquadx@gmail.com</a>
+        <a href="#">Faisalabad, Pakistan</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Content Squad. All rights reserved.</p>
+      <p>Built For Creators Who Want Real Growth.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+<script>
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const arrow = el.querySelector('.faq-arrow');
+  const answer = item.querySelector('.faq-a');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-arrow').textContent = '+';
+    i.querySelector('.faq-a').style.maxHeight = null;
+  });
+  if (!isOpen) {
+    item.classList.add('open');
+    arrow.textContent = '−';
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+  }
+}
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  this.style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'flex';
+});
+</script>
+</body>
+</html>
